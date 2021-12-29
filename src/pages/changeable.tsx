@@ -7,9 +7,9 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   /** TODOリスト */
   const [todos, setTodos] = useState<string[]>([]);
-  /** AddのTODO */
+  /** AddのTODO内容 */
   const [tmpTodo, setTmpTodo] = useState("");
-  /**  */
+  /** 変更中のTODOインデックス */
   const [changeIndex, setChangeIndex] = useState<number>();
 
   const addTodo = () => {
