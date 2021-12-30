@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 import Head from "next/head";
 import { useState } from "react";
 
@@ -54,6 +55,9 @@ const Home: NextPage = () => {
             );
           })}
         </ul>
+        <div>
+          <Link href="/changeable">登録・編集・削除バージョンへ</Link>
+        </div>
       </main>
 
       <footer className={styles.footer}></footer>
